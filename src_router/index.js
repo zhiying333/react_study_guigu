@@ -7,11 +7,9 @@ import {BrowserRouter} from 'react-router-dom'
 //引入App
 import App from './App'
 
-/* ReactDOM.render(
+ReactDOM.render(
 	<BrowserRouter>
 		<App/>
 	</BrowserRouter>,
 	document.getElementById('root')
-) */
-
-ReactDOM.render(<App/>,document.getElementById('root'))
+)
