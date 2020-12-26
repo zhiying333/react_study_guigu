@@ -1,8 +1,8 @@
 import React,{Component} from 'react'
 import {Redirect, Route} from 'react-router-dom'
-import Home from './components/Home'
-import About from './components/About'
-import MyNavLink from './components/MyNavLink'
+import Home from './pages/Home'
+import About from './pages/About'
+import MyNavLink from './pages/MyNavLink'
 
 
 export default class App extends Component {
