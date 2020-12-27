@@ -1,7 +1,11 @@
-//Count的UI组件库
+//Count容器组件
 import React, {Component} from 'react'
+import {connect} from 'react-redux'
+import {increAction,decreAction} from '../../redux/count_action'
 
-export default class Count extends Component {
+//Count的UI组件库
+
+class Count extends Component {
 
   increment = () => {
     //获取用户选择数值
@@ -51,3 +55,12 @@ export default class Count extends Component {
     )
   }
 }
+
+//优化
+export default connect(
+  state => ({count:state}),
+  {
+    incre:increAction,
+    decre:decreAction
+  }
+)(Count)
